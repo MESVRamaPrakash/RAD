@@ -1,0 +1,9 @@
+.section {
+    width:80%;
+    margin:10% auto;
+    text-align:center;
+    height: 1500px;
+}
+.card {
+    padding:20px;
+}

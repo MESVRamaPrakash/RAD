@@ -1,0 +1,116 @@
+.container-fluid1 {
+    display: flex;
+    justify-content: start;
+    align-items: self-start;
+    height: 100vh;
+    z-index: 3;
+    margin: 20px 145px;
+}
+.desc {
+    width:700px;
+    margin : 40px 0px 0px 0px;
+}
+.design {
+    color:#01c8ff;
+    font-size: 70px;
+}
+
+fa-icon {
+    font-size: 100px;
+    color: #01c8ff;
+}
+
+.develop {
+    color: #fff;
+    font-size: 34px;
+    padding: 0 10px;
+}
+.matter {
+    color: white;
+    width: 500px;
+    margin:30px 10px;
+    font-size: 18px;
+}
+
+.buttons {
+    margin:45px 10px;
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+.button1 {
+    padding: 5px 20px;
+    background-color: #01c8ff;
+    color:#000;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    transition: .7s;
+}
+.button2 {
+    padding: 5px 20px;
+    background-color: transparent;
+    color:#fff;
+    border-radius: 5px;
+    outline: none;
+    border: white 1px solid;
+    font-size: 20px;
+    transition: .7s;
+}
+
+.button1:hover {
+    background-color: rgb(255, 255, 255);
+    color: #000;
+}
+
+.button2:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.red {
+    background-color: #01c8ff;
+    width: 650px;
+    position: absolute;
+    height: 100vh;
+    top: 0;
+    right: 0;
+} 
+
+.logo {
+    font-size: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    color: #000;
+}
+
+/* .circle1 {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    filter: blur(100px);
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: -60px;
+    left: -60px;
+} */
+
+/* .circle2 {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    filter: blur(100px);
+    background-color: greenyellow;
+    position: absolute;
+    bottom: -60px;
+    left: 0%;
+} */
+
+app-socialmedia {
+    position: absolute;
+    bottom: 30px;
+    left:145px;
+}

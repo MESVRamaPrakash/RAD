@@ -1,0 +1,23 @@
+[
+    {
+        "id":1,
+        "title":"Pre-wedding",
+        "img":"../assets/Giet Logo HQ.jpg",
+        "desc":"It is pre-wedding image",
+        "button":"Explore"
+    },
+    {
+        "id":2,
+        "title":"mid-wedding",
+        "img":"../assets/Giet Logo HQ.jpg",
+        "desc":"It is mid-wedding image",
+        "button":"Explore"
+    },
+    {
+        "id":3,
+        "title":"Post-wedding",
+        "img":"../assets/Giet Logo HQ.jpg",
+        "desc":"It is post-wedding image",
+        "button":"Explore"
+    }
+]

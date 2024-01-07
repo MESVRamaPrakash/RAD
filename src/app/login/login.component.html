@@ -1,0 +1,21 @@
+<form #MyForm ="ngForm" (ngSubmit)="onSubmit(MyForm)">
+    <label for="email">Enter Email : </label>
+    <input type="email" name="email" id="email" ngModel required pattern="[a-zA-Z0-9+-._]+@[a-zA-Z0-9.-]+[a-zA-Z0-9]{2,}"><br>
+    <div *ngIf="MyForm.controls['email'].invalid && MyForm.controls['email'].touched">
+        <div *ngIf="MyForm.controls['email'].errors?.['required']">
+            Please Enter Email 
+        </div>
+        <div *ngIf="MyForm.controls['email'].errors?.['pattern']">
+            Please Enter Correct Pattern of Email
+        </div>
+    </div>
+    <label for="password">Enter Password : </label>
+    <input type="password" name="password" id="pasword" ngModel required minlength="8" maxlength="20"><br>
+    <div *ngIf="MyForm.controls['password'].hasError('minlength') && MyForm.controls['password'].touched">
+        Please Enter more than or equals to 8 characters
+    </div>
+    <div *ngIf="MyForm.controls['password'].hasError('maxlength') && MyForm.controls['password'].touched">
+        Please enter password of 20 characters
+    </div>
+    <button type="submit" [disabled]="!MyForm.valid">Submit</button>
+</form>

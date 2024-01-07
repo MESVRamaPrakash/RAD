@@ -1,0 +1,33 @@
+<section class="signup">
+    <form #myForm = "ngForm" (ngSubmit)="onSubmit()">
+        <label for="username">Enter your username : </label>
+        <input type="text" name="username" id="username" [(ngModel)] ="userData.username" required><br>
+        <div *ngIf="myForm.controls['username'].invalid && myForm.controls['username'].touched">
+            please enter username
+        </div>
+        <label for="email">Enter your email : </label>
+        <input type="email" name="email" id="email" [(ngModel)] ="userData.email" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+[a-zA-Z]{2,}"><br>
+        <div *ngIf="myForm.controls['email'].invalid && myForm.controls['email'].touched">
+            <div *ngIf="myForm.controls['email'].errors?.['required']">
+            please enter email
+            </div>
+            <div *ngIf="myForm.controls['email'].errors?.['pattern']">
+                Enter correct email
+            </div>
+        </div>
+        <label for="password">Enter your password : </label>
+        <input type="password" name="password" id="password" [(ngModel)] ="userData.password" required minlength="8" maxlength="30"><br>
+        <div *ngIf="myForm.controls['password'].hasError('minlength') && myForm.controls['password'].touched">
+            enter more than 8 character
+        </div>
+        <div *ngIf="myForm.controls['password'].hasError('maxlength') && myForm.controls['password'].touched">
+            enter less than 30 character
+        </div>
+        <label for="password">Reenter your password :  </label>
+        <input type="password" name="reenterpassword" id="reenterpassword" [(ngModel)] ="userData.reenterpassword " required><br>
+        <div *ngIf="userData.password !== userData.reenterpassword && myForm.controls['reenterpassword'].touched">
+            Please type correct password
+        </div>
+        <input type="submit" [disabled]="!myForm.form.valid || (userData.password !== userData.reenterpassword)" value="submit">
+    </form>
+</section>

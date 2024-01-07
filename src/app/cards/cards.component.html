@@ -1,0 +1,16 @@
+<section class="w-100 section">
+    <div class="row">
+        <div class="col-md-4" *ngFor="let i of modell">
+            <div class="card">
+                <div class="card-title">
+                    <h1>{{i.title}}</h1>
+                </div>
+                <div class="card-body">
+                    <img [src]="i.img" alt="" style="object-fit: contain;width:100px;padding:0">
+                    <p>{{i.desc}}</p>
+                    <button class="btn btn-dark text-light">{{i.button}}</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
