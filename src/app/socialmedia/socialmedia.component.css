@@ -1,8 +1,10 @@
 fa-icon {
     font-size: 27px;
-    margin: 0 30px 0 0;
+    margin: 20px 0 0 0;
     color: #01c8ff;
     transition: .7s;
+    display: flex;
+    flex-direction: column;
 }
 
 fa-icon:hover {

@@ -4,14 +4,16 @@
     align-items: self-start;
     height: 100vh;
     z-index: 3;
-    margin: 20px 145px;
+    margin: 20px 135px;
 }
 .desc {
     width:700px;
     margin : 40px 0px 0px 0px;
 }
 .design {
-    color:#01c8ff;
+    background-color: #00e1ff;
+    color:transparent;
+    background-clip: text;
     font-size: 70px;
 }
 
@@ -40,8 +42,8 @@ fa-icon {
 }
 .button1 {
     padding: 5px 20px;
-    background-color: #01c8ff;
-    color:#000;
+    background-color:rgba(9,9,121,1);
+    color:#fff;
     border-radius: 5px;
     outline: none;
     border: none;
@@ -60,7 +62,7 @@ fa-icon {
 }
 
 .button1:hover {
-    background-color: rgb(255, 255, 255);
+    background-color:rgb(255,255,255);
     color: #000;
 }
 
@@ -70,12 +72,13 @@ fa-icon {
 }
 
 .red {
-    background-color: #01c8ff;
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 50%, rgba(0,212,255,1) 100%);
     width: 650px;
     position: absolute;
     height: 100vh;
     top: 0;
     right: 0;
+    color:#fff;
 } 
 
 .logo {
@@ -84,7 +87,6 @@ fa-icon {
     justify-content: center;
     align-items: center;
     height: 90vh;
-    color: #000;
 }
 
 /* .circle1 {
@@ -111,6 +113,6 @@ fa-icon {
 
 app-socialmedia {
     position: absolute;
-    bottom: 30px;
-    left:145px;
+    left: 10px;
+    top:35%;
 }
